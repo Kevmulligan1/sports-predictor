@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports predictor</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul>
+    <a href = "index.html"><li>Nba Predictions</li></a>
+    <a href = "baseball.html"><li>MLB Predictions</li></a>
+<ul>
+<div class="nba_prediction">
+    <div class="gamestoday">
+        <h2>Games Today</h2>
+        <button id="fetchDataBtn">Fetch Data for Today</button>
+        <div class="games-list">
+            <!-- Games today will be dynamically added here -->
+        </div>
+
+    </div>
+
+    <div class="teamsdata">
+        <h2>Teams Data</h2>
+        <div class="teams-list">
+            <!-- Teams data will be dynamically added here -->
+        </div>
+
+    </div>
+
+    
+    <div class="predictions">
+        <h2>Model Predictions</h2>
+        <button id="TodaysGamesbutton">Tonights Predictions</button>
+        <div class="game_predictions">
+            <!-- Model accuracy/outcome will be dynamically added here -->
+        </div>
+    </div>
+    <div class="outcomes">
+        <h2>Model Accuracy</h2>
+        <div class="prediction-item">
+            <p>Team A vs. Team B - Prediction: Team A</p>
+            <input type="checkbox" class="prediction-checkbox" id="prediction1" data-prediction="Team A">
+            <label for="prediction1">Correct Prediction</label>
+          </div>
+          <button id="calculateAccuracyBtn">Calculate Accuracy</button>
+          <p>Accuracy: <span id="accuracyPercentage">0%</span></p>
+    </div>
+</div>
+    
+    
+    <script src="script.js"></script>
+ 
+</body>
+</html>

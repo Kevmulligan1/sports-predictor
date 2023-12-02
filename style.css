@@ -1,0 +1,61 @@
+ul{
+  font-size: 40px;  
+}
+
+.nba_prediction{
+    display: flex;
+    width: auto;
+    
+    justify-content: center;
+   
+}
+.nba_prediction div{
+    margin-right: 100px;
+}
+
+.gamestoday{
+    border: solid;
+    width: 600px;
+    height: 1000px;
+    
+}
+
+.teamsdata{
+    border: solid;
+    width: 700px;
+    height: 2500px;
+}
+.predictions{
+    border: solid;
+    width: 700px;
+    height: 2000px;
+}
+.outcomes{
+    border: solid;
+    width: 700px;
+    height: 1000px;
+}
+
+ .teams-list{
+
+    width: 550px;
+    display: flex;
+    flex-direction: column; 
+ }
+ .teams-list p {
+    display: inline; 
+    margin: 0;
+  }
+
+ .gamestoday button{
+    width: 400px;
+    height: 200px;
+    font-size: 40px;
+ }
+
+ .predictions button{
+    width: 400px;
+    height: 200px;
+    font-size: 40px;
+ }
+
